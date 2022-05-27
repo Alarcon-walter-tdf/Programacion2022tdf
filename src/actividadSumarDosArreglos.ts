@@ -1,5 +1,41 @@
 //Algoritmo de Suma de Arreglos
 
+function cargarVector(arregloParametro: number[], longuitud: number): void {
+  for (let i: number = 0; i < longuitud; i++) {
+    arregloParametro[i] = Number(prompt("Ingrese Valores:"));
+  }
+}
+
+function sumarVectores(
+  arreglo1: number[],
+  arreglo2: number[],
+  arreglo3: number[]
+): void {
+  for (let i: number = 0; i < arreglo3.length; i++) {
+    arreglo3[i] = arreglo1[i] + arreglo2[i];
+  }
+}
+
+function imprimirValores(resultado: number[]): void {
+  for (let indice: number = 0; indice < 6; indice++) {
+    console.log(resultado[indice]);
+  }
+}
+
+//Declarando mis varibles de arreglo
+let arregloUno: number[] = new Array(6);
+let arregloDos: number[] = new Array(6);
+let suma: number[] = new Array(6);
+
+cargarVector(arregloUno, 6);
+cargarVector(arregloDos, 6);
+sumarVectores(arregloUno, arregloDos, suma);
+imprimirValores(suma);
+
+/*
+
+//Algoritmo de Suma de Arreglos
+
 //Declarando mis varibles de arreglo
 let arregloUno: number[] = new Array(6);
 let arregloDos: number[] = new Array(6);
@@ -25,3 +61,6 @@ for (indice = 0; indice < 6; indice++) {
   suma[indice] = arregloUno[indice] + arregloDos[indice];
   console.log(suma[indice]);
 }
+
+
+*/
