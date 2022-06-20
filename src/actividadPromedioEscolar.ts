@@ -1,5 +1,5 @@
 //Declaro mis variables
-let cantAlumnos: number = Number(prompt("Ingrese cantidad de alumnos: "));
+/*let cantAlumnos: number = Number(prompt("Ingrese cantidad de alumnos: "));
 let nombreAlumnos: string[] = new Array(cantAlumnos);
 let nota1: number[] = new Array(cantAlumnos);
 let nota2: number[] = new Array(cantAlumnos);
@@ -47,3 +47,5 @@ if (alumnoEncontrado) {
 } else {
   console.log("No se encontro al alumno " + buscarAlumno);
 }
+
+*/
